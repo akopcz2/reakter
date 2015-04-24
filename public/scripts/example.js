@@ -10,11 +10,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+
 var Comment = React.createClass({
   render: function() {
     var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
     return (
       <div className="comment">
+      <div className="glyphicon glyphicon-user"></div>
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
@@ -68,7 +70,7 @@ var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        <h1>Sign In Sheet</h1>
+        <h1 className="jumbotron">Sign In Sheet</h1>
         <CommentList data={this.state.data} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
@@ -90,7 +92,7 @@ var CommentList = React.createClass({
     });
     return (
       <div className="commentList">
-        {commentNodes}
+        {commentNodes}   
       </div>
     );
   }
