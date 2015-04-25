@@ -84,3 +84,6 @@ input[type=submit]{
 input[type=submit]:hover{
   color:#c70000;
 }
+.glyphicon{
+  font-size:36px;
+}
