@@ -51,8 +51,12 @@ h2 {
   -webkit-transition: color 1s;
 }
 .commentAuthor:hover{
-  color:blue;
+  color:#66023c;
 }
+.comment{
+  background:rgba(0, 0, 0, 0.02)
+}
+
 
 h3 {
   font-size: 1.5em;
@@ -64,6 +68,7 @@ h4 {
 
 p, ul {
   margin: 15px 0;
+  padding-left:60px;
 }
 
 ul {
