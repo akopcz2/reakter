@@ -91,7 +91,7 @@ var CommentList = React.createClass({
       );
     });
     return (
-      <div className="commentList">
+      <div className="commentList text-center">
         {commentNodes}   
       </div>
     );
